@@ -1,0 +1,73 @@
+{
+    "_comment": "Default bindings for the Arcade Car Controller addon. Installed to <Project>/InputActions.json on first load if that file does not already exist. Schema matches PlayerInputSystem::LoadFromJsonFile: sourceType is a string (Keyboard|MouseButton|GamepadButton|GamepadAxis|Pointer), code is an INTEGER key/button/axis code, trigger is an OBJECT with a 'mode' field. Keyboard codes are the Windows POLYPHASE_KEY_* values from Input/InputTypes.h. Gamepad axis codes: 0=LTRIGGER 1=RTRIGGER 2=LTHUMB_X 3=LTHUMB_Y 4=RTHUMB_X 5=RTHUMB_Y. Gamepad button codes: 0=A 1=B 3=X 4=Y 6=L1 7=R1.",
+
+    "actions": [
+        {
+            "category": "Car",
+            "name": "Throttle",
+            "trigger": { "mode": "KeepHeld" },
+            "bindings": [
+                { "sourceType": "Keyboard",    "code": 87 },
+                { "sourceType": "Keyboard",    "code": 38 },
+                { "sourceType": "GamepadAxis", "code": 1, "axisDirection": "Positive", "axisThreshold": 0.06, "gamepadIndex": 0 }
+            ]
+        },
+        {
+            "category": "Car",
+            "name": "Brake",
+            "trigger": { "mode": "KeepHeld" },
+            "bindings": [
+                { "sourceType": "Keyboard",    "code": 83 },
+                { "sourceType": "Keyboard",    "code": 40 },
+                { "sourceType": "GamepadAxis", "code": 0, "axisDirection": "Positive", "axisThreshold": 0.06, "gamepadIndex": 0 }
+            ]
+        },
+        {
+            "category": "Car",
+            "name": "SteerLeft",
+            "trigger": { "mode": "KeepHeld" },
+            "bindings": [
+                { "sourceType": "Keyboard",    "code": 65 },
+                { "sourceType": "Keyboard",    "code": 37 },
+                { "sourceType": "GamepadAxis", "code": 2, "axisDirection": "Negative", "axisThreshold": 0.12, "gamepadIndex": 0 }
+            ]
+        },
+        {
+            "category": "Car",
+            "name": "SteerRight",
+            "trigger": { "mode": "KeepHeld" },
+            "bindings": [
+                { "sourceType": "Keyboard",    "code": 68 },
+                { "sourceType": "Keyboard",    "code": 39 },
+                { "sourceType": "GamepadAxis", "code": 2, "axisDirection": "Positive", "axisThreshold": 0.12, "gamepadIndex": 0 }
+            ]
+        },
+        {
+            "category": "Car",
+            "name": "Handbrake",
+            "trigger": { "mode": "KeepHeld" },
+            "bindings": [
+                { "sourceType": "Keyboard",      "code": 32 },
+                { "sourceType": "GamepadButton", "code": 0, "gamepadIndex": 0 }
+            ]
+        },
+        {
+            "category": "Car",
+            "name": "Boost",
+            "trigger": { "mode": "KeepHeld" },
+            "bindings": [
+                { "sourceType": "Keyboard",      "code": 16 },
+                { "sourceType": "GamepadButton", "code": 6, "gamepadIndex": 0 }
+            ]
+        },
+        {
+            "category": "Car",
+            "name": "ResetCar",
+            "trigger": { "mode": "SinglePress" },
+            "bindings": [
+                { "sourceType": "Keyboard",      "code": 82 },
+                { "sourceType": "GamepadButton", "code": 4, "gamepadIndex": 0 }
+            ]
+        }
+    ]
+}

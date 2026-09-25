@@ -1,0 +1,16 @@
+{
+    "name": "com.polyphase.car.controller",
+    "author": "Justin Jaro",
+    "displayName": "Arcade Car Controller",
+    "description": "Arcade-style 3D car controller (Burnout / OutRun feel) with a chase camera, drift and boost, engine audio, tire smoke, Lua bindings, and a Car Setup Wizard that builds a drivable car from a static mesh.",
+    "version": "1.0.0",
+    "native": {
+        "target": "engine",
+        "sourceDir": "Source",
+        "binaryName": "com.polyphase.car.controller",
+        "entrySymbol": "PolyphasePlugin_GetDesc",
+        "apiVersion": 8,
+        "resolveMode": "source",
+        "binaries": []
+    }
+}
